@@ -1,0 +1,10 @@
+Heredia,Sarapiqui,Santa Barbara,Barva,San Rafael,Flores,San Pablo,Belen,Santo Domingo,San Isidro
+Sarapiqui,Heredia
+Santa Barbara,Heredia,Flores,Barva
+Barva,Heredia,Santa Barbara,San Rafael,Flores
+San Rafael,Heredia,Barva,San Isidro,San Pablo
+San Isidro,San Rafael,Heredia,San Pablo,Santo Domingo
+Flores,Santa Barbara,Barva,Heredia,Belen
+San Pablo,Heredia,San Rafael,San Isidro,Santo Domingo
+Santo Domingo,San Pablo,San Isidro,Heredia
+Belen,Flores,Heredia

@@ -1,0 +1,84 @@
+Heredia,Coronado,Moravia,San Jose,Pococi,Sarapiqui,Santa Barbara,Barva,San Rafael,Flores,San Pablo,Belen,Santo Domingo,San Isidro,Alajuela
+Sarapiqui,Pococi,Heredia,San Carlos,Grecia,Alajuela,Coronado
+Santa Barbara,Heredia,Flores,Barva,Alajuela
+Barva,Heredia,Santa Barbara,San Rafael,Flores
+San Rafael,Heredia,Barva,San Isidro,San Pablo
+San Isidro,Coronado,Moravia,San Rafael,Heredia,San Pablo,Santo Domingo
+Flores,Santa Barbara,Barva,Heredia,Belen
+San Pablo,Heredia,San Rafael,San Isidro,Santo Domingo
+Santo Domingo,Moravia,Tibas,San Jose,San Pablo,San Isidro,Heredia
+Belen,San Jose,Escazu,Santa Ana,Flores,Heredia,Alajuela
+Turrubares,Puriscal,Mora,Atenas,Orotina,Parrita,Garabito
+Puriscal,Parrita,Turrubares,Mora,Acosta
+Acosta,Parrita,Aserri,Alajuelita,Escazu,Santa Ana,Mora,Puriscal
+Aserri,Acosta,Alajuelita,Desamparados,Leon Cortes,Tarrazu,Parrita
+Mora,Turrubares,Puriscal,Acosta,Santa Ana,Alajuela,Atenas
+Leon Cortes,Aserri,Desamparados,Tarrazu,Dota
+Tarrazu,Quepos,Parrita,Aserri,Leon Cortes,Perez Zeledon,Dota
+Dota,Desamparados,Leon Cortes,Tarrazu,Perez Zeledon,El Guarco
+Perez Zeledon,Limon,Talamanca,Quepos,Buenos Aires,Osa,Dota,Tarrazu,Turrialba,Paraiso,Cartago
+Desamparados,Dota,Leon Cortes,Aserri,Alajuelita,San Jose,Curridabat,El Guarco,Cartago,La Union
+Alajuelita,Acosta,Santa Ana,Escazu,San Jose,Desamparados,Aserri
+Escazu,Belen,Acosta,Santa Ana,San Jose,Alajuelita,Alajuela
+Santa Ana,Belen,Mora,Acosta,Escazu,San Jose,Alajuelita,Alajuela
+San Jose,Santo Domingo,Heredia,Belen,Escazu,Alajuelita,Desamparados,Curridabat,Montes de Oca,Goicoechea,Tibas
+Tibas,Santo Domingo,San Jose,Moravia,Goicoechea
+Goicoechea,Tibas,San Jose,Montes de Oca,Moravia,Coronado
+Montes de Oca,San Jose,Goicoechea,Curridabat,La Union,Cartago
+Curridabat,Montes de Oca,San Jose,Desamparados,La Union
+Moravia,Heredia,San Isidro,Santo Domingo,Tibas,Goicoechea,Coronado
+Coronado,San Isidro,Heredia,Pococi,Moravia,Goicoechea,Oreamuno,Cartago
+Upala,Los Chiles,Guatuso,La Cruz,Liberia,Bagaces,Canas
+Los Chiles,Upala,Guatuso,San Carlos
+Guatuso,Upala,Los Chiles,San Carlos,Canas,Tilaran
+Rio Cuarto,San Carlos,Sarapiqui,Alajuela,Sarchi
+San Carlos,Sarapiqui,Los Chiles,Guatuso,San Ramon,Zarcero,Sarchi,Rio Cuarto,Tilaran
+Grecia,Sarapiqui,Sarchi,Alajuela,Poas,Naranjo,Atenas,Alajuela
+Zarcero,San Carlos,San Ramon,Naranjo,Sarchi
+Sarchi,San Carlos,Grecia,Alajuela,Poas,Naranjo,Zarcero,Rio Cuarto
+Alajuela,Mora,Santa Ana,Escazu,Santa Barbara,Belen,Heredia,Sarapiqui,Grecia,Sarchi,Poas,Atenas,Rio Cuarto
+Poas,Alajuela,Sarchi,Grecia
+Atenas,Turrubares,Mora,Alajuela,Grecia,Naranjo,Palmares,San Mateo,Orotina,San Ramon
+Naranjo,Zarcero,Sarchi,Grecia,Atenas,Palmares,San Ramon
+Palmares,San Ramon,Naranjo,Atenas
+San Ramon,San Carlos,Zarcero,Naranjo,Palmares,San Mateo,Atenas,Tilaran,Abangares,Esparza,Montes de Oro,Puntarenas,Monteverde
+San Mateo,San Ramon,Atenas,Orotina,Esparza
+Orotina,Turrubares,San Mateo,Atenas,Garabito,Esparza
+Turrialba,Perez Zeledon,Pococi,Siquirres,Matina,Limon,Guacimo,Paraiso,Jimenez,Alvarado,Oreamuno
+Paraiso,Perez Zeledon,Turrialba,Jimenez,Alvarado,Oreamuno,Cartago
+Jimenez,Turrialba,Paraiso,Alvarado
+Alvarado,Oreamuno,Turrialba,Jimenez,Paraiso
+Oreamuno,Coronado,Cartago,Alvarado,Turrialba,Paraiso,Pococi
+Cartago,Perez Zeledon,Desamparados,Coronado,La Union,Oreamuno,El Guarco,Paraiso,Montes de Oca
+El Guarco,Desamparados,Dota,Cartago
+La Union,Cartago,Montes de Oca,Curridabat,Desamparados
+La Cruz,Liberia,Upala
+Liberia,Bagaces,Carrillo,La Cruz,Upala
+Carrillo,Liberia,Bagaces,Santa Cruz
+Santa Cruz,Carrillo,Nicoya,Bagaces
+Nicoya,Santa Cruz,Bagaces,Hojancha,Nandayure
+Hojancha,Nandayure,Nicoya
+Nandayure,Nicoya,Hojancha,Puntarenas
+Bagaces,Liberia,Carrillo,Santa Cruz,Nicoya,Canas,Upala
+Canas,Bagaces,Tilaran,Abangares,Upala,Guatuso
+Abangares,Canas,Tilaran,San Ramon,Puntarenas,Monteverde
+Tilaran,Canas,Abangares,Guatuso,San Carlos,San Ramon,Monteverde
+Pococi,Heredia,Guacimo,Siquirres,Oreamuno,Turrialba,Sarapiqui,Coronado
+Guacimo,Pococi,Siquirres,Turrialba
+Siquirres,Guacimo,Pococi,Matina,Turrialba
+Matina,Siquirres,Limon,Turrialba
+Limon,Matina,Talamanca,Turrialba,Perez Zeledon
+Talamanca,Limon,Buenos Aires,Coto Brus,Perez Zeledon
+Corredores,Golfito,Coto Brus
+Golfito,Corredores,Coto Brus,Buenos Aires,Osa
+Coto Brus,Corredores,Golfito,Buenos Aires,Talamanca
+Buenos Aires,Coto Brus,Golfito,Osa,Talamanca,Perez Zeledon
+Osa,Buenos Aires,Golfito,Quepos,Perez Zeledon,Puerto Jimenez
+Quepos,Osa,Parrita,Perez Zeledon,Tarrazu
+Parrita,Turrubares,Puriscal,Acosta,Quepos,Garabito,Tarrazu,Aserri
+Garabito,Turrubares,Parrita,Esparza,Orotina
+Esparza,Garabito,Montes de Oro,Puntarenas,San Ramon,Orotina,San Mateo
+Montes de Oro,Esparza,Puntarenas,San Ramon
+Puntarenas,Montes de Oro,Esparza,San Ramon,Abangares,Nandayure,Monteverde
+Monteverde,San Ramon,Abangares,Tilaran,Puntarenas
+Puerto Jimenez,Osa
