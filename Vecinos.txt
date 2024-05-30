@@ -1,84 +1,84 @@
-Heredia,Coronado,Moravia,San Jose,Pococi,Sarapiqui,Santa Barbara,Barva,San Rafael,Flores,San Pablo,Belen,Santo Domingo,San Isidro,Alajuela
-Sarapiqui,Pococi,Heredia,San Carlos,Grecia,Alajuela,Coronado
-Santa Barbara,Heredia,Flores,Barva,Alajuela
-Barva,Heredia,Santa Barbara,San Rafael,Flores
-San Rafael,Heredia,Barva,San Isidro,San Pablo
-San Isidro,Coronado,Moravia,San Rafael,Heredia,San Pablo,Santo Domingo
-Flores,Santa Barbara,Barva,Heredia,Belen
-San Pablo,Heredia,San Rafael,San Isidro,Santo Domingo
-Santo Domingo,Moravia,Tibas,San Jose,San Pablo,San Isidro,Heredia
-Belen,San Jose,Escazu,Santa Ana,Flores,Heredia,Alajuela
-Turrubares,Puriscal,Mora,Atenas,Orotina,Parrita,Garabito
-Puriscal,Parrita,Turrubares,Mora,Acosta
-Acosta,Parrita,Aserri,Alajuelita,Escazu,Santa Ana,Mora,Puriscal
-Aserri,Acosta,Alajuelita,Desamparados,Leon Cortes,Tarrazu,Parrita
-Mora,Turrubares,Puriscal,Acosta,Santa Ana,Alajuela,Atenas
-Leon Cortes,Aserri,Desamparados,Tarrazu,Dota
-Tarrazu,Quepos,Parrita,Aserri,Leon Cortes,Perez Zeledon,Dota
-Dota,Desamparados,Leon Cortes,Tarrazu,Perez Zeledon,El Guarco
-Perez Zeledon,Limon,Talamanca,Quepos,Buenos Aires,Osa,Dota,Tarrazu,Turrialba,Paraiso,Cartago
-Desamparados,Dota,Leon Cortes,Aserri,Alajuelita,San Jose,Curridabat,El Guarco,Cartago,La Union
-Alajuelita,Acosta,Santa Ana,Escazu,San Jose,Desamparados,Aserri
-Escazu,Belen,Acosta,Santa Ana,San Jose,Alajuelita,Alajuela
-Santa Ana,Belen,Mora,Acosta,Escazu,San Jose,Alajuelita,Alajuela
-San Jose,Santo Domingo,Heredia,Belen,Escazu,Alajuelita,Desamparados,Curridabat,Montes de Oca,Goicoechea,Tibas
-Tibas,Santo Domingo,San Jose,Moravia,Goicoechea
-Goicoechea,Tibas,San Jose,Montes de Oca,Moravia,Coronado
-Montes de Oca,San Jose,Goicoechea,Curridabat,La Union,Cartago
-Curridabat,Montes de Oca,San Jose,Desamparados,La Union
-Moravia,Heredia,San Isidro,Santo Domingo,Tibas,Goicoechea,Coronado
-Coronado,San Isidro,Heredia,Pococi,Moravia,Goicoechea,Oreamuno,Cartago
-Upala,Los Chiles,Guatuso,La Cruz,Liberia,Bagaces,Canas
+San Jose,Escazu,Alajuelita,Desamparados,Curridabat,Montes de Oca,Goicoechea,Tibas,Santo Domingo,Heredia,Belen
+Escazu,Alajuela,Santa Ana,Mora,Acosta,Alajuelita,San Jose,Belen
+Desamparados,Alajuelita,Aserri,Leon Cortes,Dota,El Guarco,Cartago,La Union,Curridabat,San Jose
+Puriscal,Turrubares,Parrita,Acosta,Mora
+Tarrazu,Aserri,Parrita,Quepos,Perez Zeledon,Dota,Leon Cortes
+Aserri,Acosta,Parrita,Tarrazu,Leon Cortes,Desamparados,Alajuelita
+Mora,Turrubares,Puriscal,Acosta,Alajuelita,Escazu,Santa Ana,Alajuela,Atenas
+Goicoechea,Tibas,San Jose,Montes de Oca,La Union,Cartago,Coronado,Moravia
+Santa Ana,Mora,Escazu,Belen,Alajuela
+Alajuelita,Escazu,Mora,Acosta,Aserri,Desamparados,San Jose
+Coronado,Heredia,San Isidro,Moravia,Goicoechea,Cartago,Oreamuno,Pococi
+Acosta,Puriscal,Parrita,Aserri,Alajuelita,Escazu,Mora
+Tibas,San Jose,Goicoechea,Moravia,Santo Domingo
+Moravia,San Isidro,Santo Domingo,Tibas,Goicoechea,Coronado,Heredia
+Montes de Oca,San Jose,Curridabat,La Union,Cartago,Goicoechea
+Turrubares,Orotina,Garabito,Parrita,Puriscal,Mora,Atenas
+Dota,Leon Cortes,Tarrazu,Perez Zeledon,Paraiso,Cartago,El Guarco,Desamparados
+Curridabat,San Jose,Desamparados,La Union,Montes de Oca
+Perez Zeledon,Tarrazu,Quepos,Osa,Buenos Aires,Talamanca,Limon,Turrialba,Paraiso,Dota
+Leon Cortes,Aserri,Tarrazu,Dota,Desamparados
+Alajuela,Rio Cuarto,Sarchi,Poas,Grecia,Atenas,Mora,Santa Ana,Escazu,Belen,Flores,Santa Barbara,Heredia,Sarapiqui
+San Ramon,Tilaran,Monteverde,Puntarenas,Montes de Oro,Esparza,San Mateo,Atenas,Palmares,Naranjo,Zarcero,San Carlos
+Grecia,Sarchi,Naranjo,Atenas,Alajuela,Poas
+San Mateo,Esparza,Orotina,Atenas,San Ramon
+Atenas,San Ramon,San Mateo,Orotina,Turrubares,Mora,Alajuela,Grecia,Naranjo,Palmares
+Naranjo,San Ramon,Palmares,Atenas,Grecia,Sarchi,Zarcero
+Palmares,San Ramon,Atenas,Naranjo
+Poas,Sarchi,Grecia,Alajuela
+Orotina,Esparza,Garabito,Turrubares,Atenas,San Mateo
+San Carlos,Los Chiles,Guatuso,Tilaran,San Ramon,Zarcero,Sarchi,Rio Cuarto,Sarapiqui
+Zarcero,San Ramon,Naranjo,Sarchi,San Carlos
+Sarchi,Zarcero,Naranjo,Grecia,Poas,Alajuela,Rio Cuarto,San Carlos
+Upala,La Cruz,Liberia,Bagaces,Cañas,Guatuso,Los Chiles
 Los Chiles,Upala,Guatuso,San Carlos
-Guatuso,Upala,Los Chiles,San Carlos,Canas,Tilaran
-Rio Cuarto,San Carlos,Sarapiqui,Alajuela,Sarchi
-San Carlos,Sarapiqui,Los Chiles,Guatuso,San Ramon,Zarcero,Sarchi,Rio Cuarto,Tilaran
-Grecia,Sarapiqui,Sarchi,Alajuela,Poas,Naranjo,Atenas,Alajuela
-Zarcero,San Carlos,San Ramon,Naranjo,Sarchi
-Sarchi,San Carlos,Grecia,Alajuela,Poas,Naranjo,Zarcero,Rio Cuarto
-Alajuela,Mora,Santa Ana,Escazu,Santa Barbara,Belen,Heredia,Sarapiqui,Grecia,Sarchi,Poas,Atenas,Rio Cuarto
-Poas,Alajuela,Sarchi,Grecia
-Atenas,Turrubares,Mora,Alajuela,Grecia,Naranjo,Palmares,San Mateo,Orotina,San Ramon
-Naranjo,Zarcero,Sarchi,Grecia,Atenas,Palmares,San Ramon
-Palmares,San Ramon,Naranjo,Atenas
-San Ramon,San Carlos,Zarcero,Naranjo,Palmares,San Mateo,Atenas,Tilaran,Abangares,Esparza,Montes de Oro,Puntarenas,Monteverde
-San Mateo,San Ramon,Atenas,Orotina,Esparza
-Orotina,Turrubares,San Mateo,Atenas,Garabito,Esparza
-Turrialba,Perez Zeledon,Pococi,Siquirres,Matina,Limon,Guacimo,Paraiso,Jimenez,Alvarado,Oreamuno
-Paraiso,Perez Zeledon,Turrialba,Jimenez,Alvarado,Oreamuno,Cartago
-Jimenez,Turrialba,Paraiso,Alvarado
-Alvarado,Oreamuno,Turrialba,Jimenez,Paraiso
-Oreamuno,Coronado,Cartago,Alvarado,Turrialba,Paraiso,Pococi
-Cartago,Perez Zeledon,Desamparados,Coronado,La Union,Oreamuno,El Guarco,Paraiso,Montes de Oca
-El Guarco,Desamparados,Dota,Cartago
-La Union,Cartago,Montes de Oca,Curridabat,Desamparados
-La Cruz,Liberia,Upala
-Liberia,Bagaces,Carrillo,La Cruz,Upala
-Carrillo,Liberia,Bagaces,Santa Cruz
-Santa Cruz,Carrillo,Nicoya,Bagaces
-Nicoya,Santa Cruz,Bagaces,Hojancha,Nandayure
-Hojancha,Nandayure,Nicoya
+Guatuso,Upala,Cañas,Tilaran,San Carlos,Los Chiles
+Rio Cuarto,San Carlos,Sarchi,Alajuela,Sarapiqui
+Cartago,Montes de Oca,La Union,Desamparados,El Guarco,Dota,Paraiso,Oreamuno,Coronado,Goicoechea
+Paraiso,Cartago,Dota,Perez Zeledon,Turrialba,Jimenez,Alvarado,Oreamuno
+La Union,Curridabat,Desamparados,Cartago,Goicoechea,Montes de Oca
+Jimenez,Alvarado,Paraiso,Turrialba
+Turrialba,Oreamuno,Alvarado,Jimenez,Paraiso,Perez Zeledon,Talamanca,Limon,Matina,Siquirres,Guacimo,Pococi
+Alvarado,Oreamuno,Paraiso,Jimenez,Turrialba
+Oreamuno,Coronado,Cartago,Paraiso,Alvarado,Turrialba,Pococi
+El Guarco,Cartago,Desamparados,Dota
+Heredia,Flores,Belen,San Jose,Santo Domingo,San Pablo,San Rafael,Barva,Alajuela,Santa Barbara,San Isidro,Moravia,Coronado,Pococi,Sarapiqui
+Barva,Santa Barbara,Flores,Heredia,San Rafael
+Santo Domingo,Heredia,San Jose,Tibas,Moravia,San Isidro,San Pablo
+Santa Barbara,Alajuela,Flores,Barva,Heredia
+San Rafael,Barva,Heredia,San Pablo,San Isidro
+San Isidro,San Rafael,San Pablo,Santo Domingo,Moravia,Coronado,Heredia
+Belen,Alajuela,Santa Ana,Escazu,San Jose,Heredia,Flores
+Flores,Alajuela,Belen,Heredia,Barva,Santa Barbara
+San Pablo,Heredia,Santo Domingo,Santa Isidro,San Rafael
+Sarapiqui,San Carlos,Rio Cuarto,Alajuela,Heredia,Pococi
+Liberia,Carrillo,Bagaces,Upala,La Cruz
+Nicoya,Santa Cruz,Hojancha,Nandayure,Cañas,Bagaces
+Santa Cruz,Nicoya,Bagaces,Carrillo
+Bagaces,Liberia,Carrillo,Santa Cruz,Nicoya,Cañas,Upala
+Carrillo,Santa Cruz,Bagaces,Liberia
+Cañas,Bagaces,Nicoya,Abangares,Tilaran,Guatuso,Upala
+Abangares,Cañas,Puntarenas,Monteverde,Tilaran
+Tilaran,Cañas,Abangares,Monteverde,San Ramon,San Carlos,Guatuso
 Nandayure,Nicoya,Hojancha,Puntarenas
-Bagaces,Liberia,Carrillo,Santa Cruz,Nicoya,Canas,Upala
-Canas,Bagaces,Tilaran,Abangares,Upala,Guatuso
-Abangares,Canas,Tilaran,San Ramon,Puntarenas,Monteverde
-Tilaran,Canas,Abangares,Guatuso,San Carlos,San Ramon,Monteverde
-Pococi,Heredia,Guacimo,Siquirres,Oreamuno,Turrialba,Sarapiqui,Coronado
-Guacimo,Pococi,Siquirres,Turrialba
-Siquirres,Guacimo,Pococi,Matina,Turrialba
-Matina,Siquirres,Limon,Turrialba
-Limon,Matina,Talamanca,Turrialba,Perez Zeledon
-Talamanca,Limon,Buenos Aires,Coto Brus,Perez Zeledon
+La Cruz,Liberia,Upala
+Hojancha,Nicoya,Nandayure
+Puntarenas,Nandayure,Abangares,Esparza,Montes de Oro,San Ramon,Monteverde
+Esparza,Montes de Oro,Puntarenas,Garabito,Orotina,San Mateo,San Ramon
+Buenos Aires,Perez Zeledon,Osa,Golfito,Coto Brus,Talamanca
+Montes de Oro,Puntarenas,Esparza,San Ramon
+Osa,Quepos,Puerto Jimenez,Golfito,Buenos Aires,Perez Zeledon
+Quepos,Parrita,Osa,Perez Zeledon,Tarrazu
+Golfito,Osa,Corredores,Coto Brus,Buenos Aires
+Coto Brus,Buenos Aires,Golfito,Corredores,Talamanca
+Parrita,Garabito,Quepos,Tarrazu,Aserri,Acosta,Puriscal,Turrubares
 Corredores,Golfito,Coto Brus
-Golfito,Corredores,Coto Brus,Buenos Aires,Osa
-Coto Brus,Corredores,Golfito,Buenos Aires,Talamanca
-Buenos Aires,Coto Brus,Golfito,Osa,Talamanca,Perez Zeledon
-Osa,Buenos Aires,Golfito,Quepos,Perez Zeledon,Puerto Jimenez
-Quepos,Osa,Parrita,Perez Zeledon,Tarrazu
-Parrita,Turrubares,Puriscal,Acosta,Quepos,Garabito,Tarrazu,Aserri
-Garabito,Turrubares,Parrita,Esparza,Orotina
-Esparza,Garabito,Montes de Oro,Puntarenas,San Ramon,Orotina,San Mateo
-Montes de Oro,Esparza,Puntarenas,San Ramon
-Puntarenas,Montes de Oro,Esparza,San Ramon,Abangares,Nandayure,Monteverde
-Monteverde,San Ramon,Abangares,Tilaran,Puntarenas
+Garabito,Parrita,Turrubares,Orotina,Esparza
+Monteverde,Abangares,Puntarenas,San Ramon,Tilaran
 Puerto Jimenez,Osa
+Limon,Turrialba,Perez Zeledon,Talamanca,Matina
+Pococi,Sarapiqui,Heredia,Coronado,Oreamuno,Turrialba,Guacimo
+Siquirres,Guacimo,Turrialba,Matina
+Talamanca,Perez Zeledon,Buenos Aires,Coto Brus,Limon,Turrialba
+Matina,Siquirres,Turrialba,Limon
+Guacimo,Pococi,Turrialba,Siquirres

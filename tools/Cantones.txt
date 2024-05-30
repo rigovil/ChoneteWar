@@ -1,0 +1,84 @@
+San Jose,67,50,134
+Escazu,232,201,22
+Desamparados,239,237,82
+Puriscal,180,210,103
+Tarrazu,43,95,181
+Aserri,87,17,29
+Mora,134,146,122
+Goicoechea,150,206,144
+Santa Ana,99,130,7
+Alajuelita,50,250,60
+Coronado,94,117,163
+Acosta,125,210,18
+Tibas,60,143,128
+Moravia,200,69,56
+Montes de Oca,91,81,41
+Turrubares,135,116,214
+Dota,44,158,136
+Curridabat,128,196,205
+Perez Zeledon,171,75,113
+Leon Cortes,167,150,127
+Alajuela,32,136,50
+San Ramon,251,75,168
+Grecia,47,40,189
+San Mateo,155,4,152
+Atenas,46,96,53
+Naranjo,37,99,58
+Palmares,84,107,85
+Poas,54,82,221
+Orotina,46,148,32
+San Carlos,162,124,244
+Zarcero,163,186,123
+Sarchi,119,37,64
+Upala,198,172,179
+Los Chiles,92,81,139
+Guatuso,27,248,90
+Rio Cuarto,68,59,129
+Cartago,58,163,159
+Paraiso,99,159,10
+La Union,248,191,248
+Jimenez,124,4,243
+Turrialba,74,86,30
+Alvarado,106,182,229
+Oreamuno,118,125,217
+El Guarco,46,101,172
+Heredia,170,103,12
+Barva,146,233,8
+Santo Domingo,135,178,59
+Santa Barbara,182,159,249
+San Rafael,100,152,210
+San Isidro,5,105,209
+Belen,137,75,193
+Flores,96,218,91
+San Pablo,122,109,51
+Sarapiqui,22,193,101
+Liberia,20,224,102
+Nicoya,126,191,156
+Santa Cruz,174,242,64
+Bagaces,189,234,101
+Carrillo,72,117,201
+Cañas,51,75,72
+Abangares,235,126,254
+Tilaran,91,16,194
+Nandayure,93,187,29
+La Cruz,47,18,155
+Hojancha,181,200,186
+Puntarenas,85,58,205
+Esparza,83,171,72
+Buenos Aires,124,225,210
+Montes de Oro,113,203,159
+Osa,136,29,221
+Quepos,165,204,134
+Golfito,35,194,33
+Coto Brus,205,26,249
+Parrita,212,207,55
+Corredores,14,203,140
+Garabito,145,119,94
+Monteverde,10,140,207
+Puerto Jimenez,142,121,159
+Limon,155,179,26
+Pococi,23,33,203
+Siquirres,253,24,68
+Talamanca,138,192,64
+Matina,211,73,51
+Guacimo,89,223,87

@@ -1,0 +1,11 @@
+HECHOS:
+- responder al tweet del ataque mostrando top de cantones segun cantidad de conquistados
+- poner dia y hora en el ataque
+
+HACIENDO:
+
+
+FALTAN:
+- variedad de mensajes en el ataque
+- guardar estadisticas privadas con cada ataque
+- escribir respaldo en .csv con cada ataque
