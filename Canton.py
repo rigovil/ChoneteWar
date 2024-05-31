@@ -1,5 +1,3 @@
-from Mapa import Mapa
-
 class Canton:
 
     def __init__(self, nombre = '', numeroDeCanton = 0, colores = []):

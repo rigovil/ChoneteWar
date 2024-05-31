@@ -1,7 +1,5 @@
 import cv2
-import time
 import numpy as np
-import matplotlib.pyplot as plt
 
 class Mapa:
 
@@ -9,6 +7,9 @@ class Mapa:
         self.rutaOriginal = 'costarica.png'
         self.rutaAtaque = 'costarica_ataque.png'
         self.rutaMapaGuerra = 'costarica_guerra.png'
+        # self.rutaOriginal = '/home/chonetewar/ChoneteWar/costarica.png'           # produccion
+        # self.rutaAtaque = '/home/chonetewar/ChoneteWar/costarica_ataque.png'      # produccion
+        # self.rutaMapaGuerra = '/home/chonetewar/ChoneteWar/costarica_guerra.png'  # produccion
         self.imagenOriginal = cv2.imread(self.rutaOriginal)
         self.imagenMapaAtaque = cv2.imread(self.rutaOriginal)
         self.imagenMapaGuerra = self.imagenOriginal
@@ -84,9 +85,9 @@ class Mapa:
                     if np.array_equal(bordered_image[ny, nx], [255, 255, 255]):
                         intensidad_color = np.sum(colorAtacante) / 3
                         if intensidad_color > 100:
-                            bordered_image[ny, nx] = [int(c * 0.5) for c in colorAtacante] # oscurece el color
+                            bordered_image[ny, nx] = [int(c * 0.5) for c in colorAtacante]          # oscurece el color
                         else:
-                            bordered_image[ny, nx] = [min(int(c * 2), 255) for c in colorAtacante]   # aclara el color
+                            bordered_image[ny, nx] = [min(int(c * 2), 255) for c in colorAtacante]  # aclara el color
 
         # Generar una imagen mas cerca de los cantones involucrados en el ataque
         imagen_acercada = bordered_image.copy()
