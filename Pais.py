@@ -1,3 +1,4 @@
+import time
 import random
 import locale
 from CSV import CSV
@@ -35,7 +36,7 @@ class Pais:
     def hayGanador(self):
         for canton in self.cantones:
             if(canton.getNumeroDeCantonesConquistados() == self.numeroDeCantones):
-                self.twitter.tweetFinal(canton.getNombre())
+                # self.twitter.tweetFinal(canton.getNombre())
                 return True
                         
         return False
@@ -120,8 +121,8 @@ class Pais:
             self.CSV.ataque(fecha, cantonAIndependizarse.getNombre(), cantonAIndependizarse.conquistador.getNombre(), cantonAIndependizarse.getNombre(), cantonAIndependizarse.getNombre(), True)
             tweet += cantonAIndependizarse.seIndependiza(self.Mapa)
 
-        self.twitter.tweetAtaque(tweet)
-        self.twitter.tweetPosiciones(self.posiciones())
+        # self.twitter.tweetAtaque(tweet)
+        # self.twitter.tweetPosiciones(self.posiciones())
         self.fecha = self.fecha + relativedelta(months=1)
 
     def restaureAtaques(self):
@@ -141,6 +142,10 @@ class Pais:
                     cantonAtacante.seIndependiza(self.Mapa)
                     self.probabilidadIndependencia -= 0.0025
             self.fecha = datetime.strptime(fecha.strip().lower(), '%B %Y') + relativedelta(months=1)
+
+            if datetime.now().minute != 0: 
+                delta = 60 - datetime.now().minute
+                time.sleep(delta * 60)
         else:
             self.CSV.crear()
-            self.twitter.tweetInicio()
+            # self.twitter.tweetInicio()

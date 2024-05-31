@@ -1,11 +1,15 @@
 HECHOS:
 - responder al tweet del ataque mostrando top de cantones segun cantidad de conquistados
 - poner dia y hora en el ataque
+- escribir respaldo en .csv con cada ataque
 
 HACIENDO:
 
 
 FALTAN:
 - variedad de mensajes en el ataque
-- guardar estadisticas privadas con cada ataque
-- escribir respaldo en .csv con cada ataque
+- guardar estadisticas privadas con cada ataque (usar pands con .csv)
+- agregar nombre de cantones en la imagen
+- web en python
+- probar con api de tiktok
+- efecto luminoso a bordes blancos de canton atacado

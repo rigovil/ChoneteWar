@@ -1,4 +1,4 @@
-import time
+import datetime, time
 from Pais import Pais
 
 def main():
@@ -11,7 +11,9 @@ def main():
 
     while(CostaRica.hayGanador() == False):
         CostaRica.ataque()
-        time.sleep(3600)
+        # time.sleep(3600)
+        print('ataque')
+        time.sleep(5)
     
     print('La guerra ha terminado')
 

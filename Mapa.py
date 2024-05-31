@@ -12,11 +12,6 @@ class Mapa:
         self.imagenOriginal = cv2.imread(self.rutaOriginal)
         self.imagenMapaAtaque = cv2.imread(self.rutaOriginal)
         self.imagenMapaGuerra = self.imagenOriginal
-        # self.fig, self.ax = plt.subplots()
-        # self.image_rgb = self.ax.imshow(cv2.cvtColor(self.imagenMapaGuerra, cv2.COLOR_BGR2RGB))
-        # plt.title('Estado de guerra actual')
-        # plt.axis('off')
-        # plt.show(block=False)
 
     def guardePixeles(self, cantones):
         for canton in cantones:          
@@ -38,21 +33,6 @@ class Mapa:
 
         cv2.imwrite(self.rutaMapaGuerra, imagen)
         self.imagenMapaGuerra = cv2.imread(self.rutaMapaGuerra)
-
-    def muestreMapa(self):
-        image_rgb = cv2.cvtColor(self.imagenMapaGuerra, cv2.COLOR_BGR2RGB)
-        plt.imshow(image_rgb)
-        plt.title('Estado de guerra actual')
-        plt.axis('off')
-        plt.show(block=False)
-        plt.pause(0.5)
-        # plt.close()
-
-    def actualiceMapa(self):
-        self.image_rgb.set_array(cv2.cvtColor(self.imagenMapaGuerra, cv2.COLOR_BGR2RGB))
-        self.fig.canvas.draw()
-        self.fig.canvas.flush_events()
-        time.sleep(0.05)
 
     def muestreAtaque(self, pixelesAtacado, pixelesAtacante, colorAtacado, colorAtacante, zoom=2.1):
         imagen = self.imagenMapaGuerra
@@ -133,17 +113,3 @@ class Mapa:
         img_cropped = img_zoomed[y1:y2, x1:x2]
         cv2.imwrite(self.rutaAtaque, img_cropped)
         self.imagenMapaAtaque = cv2.imread(self.rutaAtaque)
-
-        # image_rgb = cv2.cvtColor(img_cropped, cv2.COLOR_BGR2RGB)
-        # plt.imshow(image_rgb)
-        # plt.title('Ataque')
-        # plt.axis('off')
-        # plt.show()
-
-        # image_rgb = cv2.cvtColor(self.imagenMapaAtaque, cv2.COLOR_BGR2RGB)
-        # plt.imshow(image_rgb)
-        # plt.title('Ataque')
-        # plt.axis('off')
-        # plt.show(block=False)
-        # plt.pause(0.1)
-        # # plt.close()
