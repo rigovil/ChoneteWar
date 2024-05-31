@@ -6,12 +6,9 @@ class Twitter:
         self.__clientV1 = None
         self.__clientV2 = None
         self.__tweetUltimoAtaque = 0
-        self.mapaCostaRica = 'costarica.png'
-        self.mapaCostaRicaGuerra = 'costarica_guerra.png'
-        self.mapaCostaRicaAtaque = 'costarica_ataque.png'
-        # self.mapaCostaRica = '/home/chonetewar/ChoneteWar/costarica.png'                  # produccion
-        # self.mapaCostaRicaGuerra = '/home/chonetewar/ChoneteWar/costarica_guerra.png'     # produccion
-        # self.mapaCostaRicaAtaque = '/home/chonetewar/ChoneteWar/costarica_ataque.png'     # produccion
+        self.mapaCostaRica = '/home/chonetewar/ChoneteWar/costarica.png'                  # produccion
+        self.mapaCostaRicaGuerra = '/home/chonetewar/ChoneteWar/costarica_guerra.png'     # produccion
+        self.mapaCostaRicaAtaque = '/home/chonetewar/ChoneteWar/costarica_ataque.png'     # produccion
 
     def authenticate(self, consumer_key, consumer_secret, access_token, access_token_secret):
         auth = tweepy.OAuth1UserHandler(

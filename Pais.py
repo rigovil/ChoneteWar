@@ -36,7 +36,7 @@ class Pais:
     def hayGanador(self):
         for canton in self.cantones:
             if(canton.getNumeroDeCantonesConquistados() == self.numeroDeCantones):
-                # self.twitter.tweetFinal(canton.getNombre())   # produccion
+                self.twitter.tweetFinal(canton.getNombre())   # produccion
                 return True
                         
         return False
@@ -121,8 +121,8 @@ class Pais:
             self.CSV.ataque(fecha, cantonAIndependizarse.getNombre(), cantonAIndependizarse.conquistador.getNombre(), cantonAIndependizarse.getNombre(), cantonAIndependizarse.getNombre(), True)
             tweet += cantonAIndependizarse.seIndependiza(self.Mapa)
 
-        # self.twitter.tweetAtaque(tweet)                   # produccion
-        # self.twitter.tweetPosiciones(self.posiciones())   # produccion
+        self.twitter.tweetAtaque(tweet)                   # produccion
+        self.twitter.tweetPosiciones(self.posiciones())   # produccion
         self.fecha = self.fecha + relativedelta(months=1)
 
     def restaureAtaques(self):
@@ -145,7 +145,7 @@ class Pais:
 
             if datetime.now().minute != 0: 
                 delta = 60 - datetime.now().minute
-                # time.sleep(delta * 60)    # produccion
+                time.sleep(delta * 60)    # produccion
         else:
             self.CSV.crear()
-            # self.twitter.tweetInicio()    # produccion
+            self.twitter.tweetInicio()    # produccion

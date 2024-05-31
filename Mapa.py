@@ -4,12 +4,9 @@ import numpy as np
 class Mapa:
 
     def __init__(self):
-        self.rutaOriginal = 'costarica.png'
-        self.rutaAtaque = 'costarica_ataque.png'
-        self.rutaMapaGuerra = 'costarica_guerra.png'
-        # self.rutaOriginal = '/home/chonetewar/ChoneteWar/costarica.png'           # produccion
-        # self.rutaAtaque = '/home/chonetewar/ChoneteWar/costarica_ataque.png'      # produccion
-        # self.rutaMapaGuerra = '/home/chonetewar/ChoneteWar/costarica_guerra.png'  # produccion
+        self.rutaOriginal = '/home/chonetewar/ChoneteWar/costarica.png'           # produccion
+        self.rutaAtaque = '/home/chonetewar/ChoneteWar/costarica_ataque.png'      # produccion
+        self.rutaMapaGuerra = '/home/chonetewar/ChoneteWar/costarica_guerra.png'  # produccion
         self.imagenOriginal = cv2.imread(self.rutaOriginal)
         self.imagenMapaAtaque = cv2.imread(self.rutaOriginal)
         self.imagenMapaGuerra = self.imagenOriginal
