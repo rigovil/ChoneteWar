@@ -1,5 +1,13 @@
 import time
 from Pais import Pais
+from datetime import datetime
+
+def espera():
+    delta = 60 - datetime.now().minute
+    if delta == 0:
+        time.sleep(3600)
+    else:
+        time.sleep(delta * 60)
 
 def main():
     CostaRica = Pais()
@@ -11,7 +19,7 @@ def main():
 
     while(CostaRica.hayGanador() == False):
         CostaRica.ataque()
-        time.sleep(3600)  # produccion
+        espera()
     
     print('La guerra ha terminado')
 
