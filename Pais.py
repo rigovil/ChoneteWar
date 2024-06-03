@@ -143,9 +143,9 @@ class Pais:
                     self.probabilidadIndependencia -= 0.0025
             self.fecha = datetime.strptime(fecha.strip().lower(), '%B %Y') + relativedelta(months=1)
 
-            # if datetime.now().minute != 0: 
-            #     delta = 60 - datetime.now().minute
-            #     time.sleep(delta * 60)    # produccion
+            if datetime.now().minute != 0: 
+                delta = 60 - datetime.now().minute
+                time.sleep(delta * 60)    # produccion
         else:
             self.CSV.crear()
             self.twitter.tweetInicio()    # produccion

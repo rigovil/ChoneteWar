@@ -28,7 +28,7 @@ class Twitter:
             media = self.__clientV1.media_upload(filename=self.mapaCostaRica)
             mediaId = media.media_id
             log = self.__clientV2.create_tweet(text='Ha comenzado la guerra civil en Costa Rica y los 84 cantones se disputarán entre sí el territorio costarricense.', media_ids=[mediaId])
-            self.__file.write('LOG: ' + log + '\n')
+            self.__file.write('LOG: ' + str(log) + '\n')
         except:
             self.__file.write('EXC: tweetInicio\n')
     
@@ -39,7 +39,7 @@ class Twitter:
             mediaId1 = media1.media_id
             mediaId2 = media2.media_id
             log = self.__tweetUltimoAtaque = self.__clientV2.create_tweet(text=ataque, media_ids=[mediaId1, mediaId2])
-            self.__file.write('LOG: ' + log + '\n')
+            self.__file.write('LOG: ' + str(log) + '\n')
         except:
             self.__file.write('EXC: tweetAtaque, param: ' + ataque + '\n')
     
@@ -47,7 +47,7 @@ class Twitter:
         try:
             tweetId = self.__tweetUltimoAtaque.data['id']
             log = self.__clientV2.create_tweet(text=posiciones, in_reply_to_tweet_id=tweetId)
-            self.__file.write('LOG: ' + log + '\n')
+            self.__file.write('LOG: ' + str(log) + '\n')
         except:
             self.__file.write('EXC: tweetPosiciones, param: ' + posiciones + '\n')
 
@@ -57,6 +57,6 @@ class Twitter:
             mediaId = media.media_id
             text = '¡La guerra ha terminado! ' + ganador + ' ha conquistado todo el territorio de Costa Rica.'
             log = self.__clientV2.create_tweet(text=text, media_ids=[mediaId])
-            self.__file.write('LOG: ' + log + '\n')
+            self.__file.write('LOG: ' + str(log) + '\n')
         except:
             self.__file.write('EXC: tweetFinal, param: ' + ganador + '\n')
