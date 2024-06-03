@@ -1,4 +1,5 @@
 import tweepy
+from datetime import datetime
 
 class Twitter:
 
@@ -32,10 +33,10 @@ class Twitter:
             mediaId = media.media_id
             log = self.__clientV2.create_tweet(text='Ha comenzado la guerra civil en Costa Rica y los 84 cantones se disputarán entre sí el territorio costarricense.', media_ids=[mediaId])
             file = open(self.twitterLog, mode="a", encoding='utf-8')
-            file.write('LOG: ' + str(log) + '\n')
+            file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
         except:
             file = open(self.twitterLog, mode="a", encoding='utf-8')
-            file.write('EXC: tweetInicio\n')
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetInicio\n')
     
     def tweetAtaque(self, ataque):
         try:
@@ -45,20 +46,20 @@ class Twitter:
             mediaId2 = media2.media_id
             log = self.__tweetUltimoAtaque = self.__clientV2.create_tweet(text=ataque, media_ids=[mediaId1, mediaId2])
             file = open(self.twitterLog, mode="a", encoding='utf-8')
-            file.write('LOG: ' + str(log) + '\n')
+            file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
         except:
             file = open(self.twitterLog, mode="a", encoding='utf-8')
-            file.write('EXC: tweetAtaque, param: ' + ataque + '\n')
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetAtaque, param: ' + ataque + '\n')
     
     def tweetPosiciones(self, posiciones):
         try:
             tweetId = self.__tweetUltimoAtaque.data['id']
             log = self.__clientV2.create_tweet(text=posiciones, in_reply_to_tweet_id=tweetId)
             file = open(self.twitterLog, mode="a", encoding='utf-8')
-            file.write('LOG: ' + str(log) + '\n')
+            file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
         except:
             file = open(self.twitterLog, mode="a", encoding='utf-8')
-            file.write('EXC: tweetPosiciones, param: ' + posiciones + '\n')
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetPosiciones, param: ' + posiciones + '\n')
 
     def tweetFinal(self, ganador):
         try:
@@ -67,7 +68,7 @@ class Twitter:
             text = '¡La guerra ha terminado! ' + ganador + ' ha conquistado todo el territorio de Costa Rica.'
             log = self.__clientV2.create_tweet(text=text, media_ids=[mediaId])
             file = open(self.twitterLog, mode="a", encoding='utf-8')
-            file.write('LOG: ' + str(log) + '\n')
+            file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
         except:
             file = open(self.twitterLog, mode="a", encoding='utf-8')
-            file.write('EXC: tweetFinal, param: ' + ganador + '\n')
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetFinal, param: ' + ganador + '\n')
