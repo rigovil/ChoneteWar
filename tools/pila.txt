@@ -4,7 +4,7 @@ HECHOS:
 - escribir respaldo en .csv con cada ataque
 
 HACIENDO:
-
+- efecto luminoso a bordes blancos de canton atacado
 
 FALTAN:
 - variedad de mensajes en el ataque
@@ -12,4 +12,3 @@ FALTAN:
 - agregar nombre de cantones en la imagen
 - web en python
 - probar con api de tiktok
-- efecto luminoso a bordes blancos de canton atacado
