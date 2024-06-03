@@ -137,11 +137,12 @@ class Pais:
 
                 if independencia.strip() == "False":
                     cantonAtacante.ataca(cantonDisputado)
-                    cantonDisputado.esAtacado(cantonAtacante, cantonUtilizado, self.Mapa)
+                    cantonDisputado.esAtacado(cantonAtacante, cantonUtilizado, self.Mapa, colorearMapa = False)
                 else:
-                    cantonAtacante.seIndependiza(self.Mapa)
+                    cantonAtacante.seIndependiza(self.Mapa, colorearMapa = False)
                     self.probabilidadIndependencia -= 0.0025
             self.fecha = datetime.strptime(fecha.strip().lower(), '%B %Y') + relativedelta(months=1)
+            self.Mapa.restaureMapa(self.cantones)
 
             if datetime.now().minute != 0: 
                 delta = 60 - datetime.now().minute

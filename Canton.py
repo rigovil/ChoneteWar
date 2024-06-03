@@ -72,8 +72,9 @@ class Canton:
         self.__numeroDeCantonesConquistados += 1
         self.__cantonesConquistados.append(canton)
 
-    def esAtacado(self, atacante, dondeAtaca, mapa):
-        mapa.coloreeAtaque(self.conquistador.getColor(), self.getPixeles(), atacante.getColor(), dondeAtaca.getPixeles())
+    def esAtacado(self, atacante, dondeAtaca, mapa, colorearMapa = True):
+        if colorearMapa:
+            mapa.coloreeAtaque(self.conquistador.getColor(), self.getPixeles(), atacante.getColor(), dondeAtaca.getPixeles())
 
         if(atacante == self):
             tweet = self.__nombre + ' ha atacado a ' + self.conquistador.getNombre() + ' y ha recuperado su propio territorio.'
@@ -84,8 +85,9 @@ class Canton:
         self.conquistador = atacante
         return tweet
 
-    def seIndependiza(self, mapa):
-        mapa.coloreeAtaque(self.conquistador.getColor(), self.__pixeles, self.__color, self.__pixeles)
+    def seIndependiza(self, mapa, colorearMapa = True):
+        if colorearMapa:
+            mapa.coloreeAtaque(self.conquistador.getColor(), self.__pixeles, self.__color, self.__pixeles)
 
         if(self.__numeroDeCantonesConquistados == 0):
             tweet = self.__nombre + ' se ha independizado de ' + self.conquistador.getNombre() + '.'

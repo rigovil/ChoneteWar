@@ -1,12 +1,15 @@
 import cv2
 import numpy as np
+from datetime import datetime
 
 class Mapa:
 
     def __init__(self):
+        self.log = '/home/chonetewar/ChoneteWar/chonetewar.log'                   # produccion
         self.rutaOriginal = '/home/chonetewar/ChoneteWar/costarica.png'           # produccion
         self.rutaAtaque = '/home/chonetewar/ChoneteWar/costarica_ataque.png'      # produccion
         self.rutaMapaGuerra = '/home/chonetewar/ChoneteWar/costarica_guerra.png'  # produccion
+        # self.log = 'chonetewar.log'
         # self.rutaOriginal = 'costarica.png'
         # self.rutaAtaque = 'costarica_ataque.png'
         # self.rutaMapaGuerra = 'costarica_guerra.png'
@@ -18,10 +21,23 @@ class Mapa:
         for canton in cantones:          
             color = tuple(reversed(canton.getColor()))
             pixeles = np.column_stack(np.where(np.all(self.imagenOriginal == color, axis=-1)))
-            if(len(pixeles) == 0):
-                print(canton.getNombre())
             pixeles[:, [0, 1]] = pixeles[:, [1, 0]]
             canton.setPixeles(pixeles)
+
+    def restaureMapa(self, cantones):
+        for canton in cantones:
+            imagen = self.imagenMapaGuerra
+            color = tuple(reversed(canton.getColor()))
+            colorConquistador = tuple(reversed(canton.conquistador.getColor()))
+
+            if color != colorConquistador:
+                coordenadasX, coordenadasY = zip(*canton.getPixeles())
+                imagen[coordenadasY, coordenadasX] = colorConquistador
+                cv2.imwrite(self.rutaMapaGuerra, imagen)
+                self.imagenMapaGuerra = cv2.imread(self.rutaMapaGuerra)
+            
+        file = open(self.log, mode="a", encoding='utf-8')
+        file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): Ataques y mapas restaurados\n')
 
     def coloreeAtaque(self, colorAtacado, pixelesAtacado, colorAtacante, pixelesAtacante):
         imagen = self.imagenMapaGuerra
@@ -31,7 +47,6 @@ class Mapa:
         self.muestreAtaque(pixelesAtacado, pixelesAtacante, colorAtacado, colorAtacante)
 
         imagen[coordenadasY, coordenadasX] = color
-
         cv2.imwrite(self.rutaMapaGuerra, imagen)
         self.imagenMapaGuerra = cv2.imread(self.rutaMapaGuerra)
 
