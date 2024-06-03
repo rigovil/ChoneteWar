@@ -10,7 +10,10 @@ class Twitter:
         self.mapaCostaRica = '/home/chonetewar/ChoneteWar/costarica.png'                # produccion
         self.mapaCostaRicaGuerra = '/home/chonetewar/ChoneteWar/costarica_guerra.png'   # produccion
         self.mapaCostaRicaAtaque = '/home/chonetewar/ChoneteWar/costarica_ataque.png'   # produccion
-        self.__file = open(self.twitterLog, "a")                                        # produccion
+        # self.twitterLog = 'twitter.log'
+        # self.mapaCostaRica = 'costarica.png'
+        # self.mapaCostaRicaGuerra = 'costarica_guerra.png'
+        # self.mapaCostaRicaAtaque = 'costarica_ataque.png'
 
     def authenticate(self, consumer_key, consumer_secret, access_token, access_token_secret):
         auth = tweepy.OAuth1UserHandler(
@@ -28,9 +31,11 @@ class Twitter:
             media = self.__clientV1.media_upload(filename=self.mapaCostaRica)
             mediaId = media.media_id
             log = self.__clientV2.create_tweet(text='Ha comenzado la guerra civil en Costa Rica y los 84 cantones se disputarán entre sí el territorio costarricense.', media_ids=[mediaId])
-            self.__file.write('LOG: ' + str(log) + '\n')
+            file = open(self.twitterLog, mode="a", encoding='utf-8')
+            file.write('LOG: ' + str(log) + '\n')
         except:
-            self.__file.write('EXC: tweetInicio\n')
+            file = open(self.twitterLog, mode="a", encoding='utf-8')
+            file.write('EXC: tweetInicio\n')
     
     def tweetAtaque(self, ataque):
         try:
@@ -39,17 +44,21 @@ class Twitter:
             mediaId1 = media1.media_id
             mediaId2 = media2.media_id
             log = self.__tweetUltimoAtaque = self.__clientV2.create_tweet(text=ataque, media_ids=[mediaId1, mediaId2])
-            self.__file.write('LOG: ' + str(log) + '\n')
+            file = open(self.twitterLog, mode="a", encoding='utf-8')
+            file.write('LOG: ' + str(log) + '\n')
         except:
-            self.__file.write('EXC: tweetAtaque, param: ' + ataque + '\n')
+            file = open(self.twitterLog, mode="a", encoding='utf-8')
+            file.write('EXC: tweetAtaque, param: ' + ataque + '\n')
     
     def tweetPosiciones(self, posiciones):
         try:
             tweetId = self.__tweetUltimoAtaque.data['id']
             log = self.__clientV2.create_tweet(text=posiciones, in_reply_to_tweet_id=tweetId)
-            self.__file.write('LOG: ' + str(log) + '\n')
+            file = open(self.twitterLog, mode="a", encoding='utf-8')
+            file.write('LOG: ' + str(log) + '\n')
         except:
-            self.__file.write('EXC: tweetPosiciones, param: ' + posiciones + '\n')
+            file = open(self.twitterLog, mode="a", encoding='utf-8')
+            file.write('EXC: tweetPosiciones, param: ' + posiciones + '\n')
 
     def tweetFinal(self, ganador):
         try:
@@ -57,6 +66,8 @@ class Twitter:
             mediaId = media.media_id
             text = '¡La guerra ha terminado! ' + ganador + ' ha conquistado todo el territorio de Costa Rica.'
             log = self.__clientV2.create_tweet(text=text, media_ids=[mediaId])
-            self.__file.write('LOG: ' + str(log) + '\n')
+            file = open(self.twitterLog, mode="a", encoding='utf-8')
+            file.write('LOG: ' + str(log) + '\n')
         except:
-            self.__file.write('EXC: tweetFinal, param: ' + ganador + '\n')
+            file = open(self.twitterLog, mode="a", encoding='utf-8')
+            file.write('EXC: tweetFinal, param: ' + ganador + '\n')

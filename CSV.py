@@ -5,6 +5,7 @@ class CSV:
 
     def __init__ (self):
         self.__rutaHistorial = '/home/chonetewar/ChoneteWar/historial.csv'     # produccion
+        # self.__rutaHistorial = 'historial.csv'
 
     def existe(self):
         return os.path.isfile(self.__rutaHistorial)
