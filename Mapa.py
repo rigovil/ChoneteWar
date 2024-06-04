@@ -37,7 +37,7 @@ class Mapa:
                 self.imagenMapaGuerra = cv2.imread(self.rutaMapaGuerra)
             
         file = open(self.log, mode="a", encoding='utf-8')
-        file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): Ataques y mapas restaurados\n')
+        file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): Ataques y mapa restaurados\n')
 
     def coloreeAtaque(self, colorAtacado, pixelesAtacado, colorAtacante, pixelesAtacante):
         imagen = self.imagenMapaGuerra
