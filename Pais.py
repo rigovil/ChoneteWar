@@ -110,12 +110,8 @@ class Pais:
         if(tipoAtaque <= self.probabilidadIndependencia and not self.hayCantonDerrotado()):
             tipoAtaque = self.probabilidadIndependencia + 1
 
-        # if(tipoAtaque > self.probabilidadIndependencia):
-        if True:
-            # cantonAtacante, cantonAtacado, cantonDondeAtaca = self.cantonesEnAtaque()
-            cantonAtacante = self.getCanton('Poás')
-            cantonAtacado = self.getCanton('Escazú')
-            cantonDondeAtaca = self.getCanton('Alajuela')
+        if(tipoAtaque > self.probabilidadIndependencia):
+            cantonAtacante, cantonAtacado, cantonDondeAtaca = self.cantonesEnAtaque()
             self.CSV.ataque(fecha, cantonAtacante.getNombre(), cantonAtacado.conquistador.getNombre(), cantonAtacado.getNombre(), cantonDondeAtaca.getNombre(), False)
             cantonAtacante.ataca(cantonAtacado)
             tweet += cantonAtacado.esAtacado(cantonAtacante, cantonDondeAtaca, self.Mapa)
