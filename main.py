@@ -19,7 +19,7 @@ def main():
     while(CostaRica.hayGanador() == False):
         CostaRica.ataque()
         espera()  # produccion
-    
+
     print('La guerra ha terminado')
 
 if __name__ == "__main__":
