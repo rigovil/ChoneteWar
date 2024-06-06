@@ -1,4 +1,5 @@
 import tweepy
+import traceback
 from datetime import datetime
 
 class Twitter:
@@ -36,7 +37,7 @@ class Twitter:
             file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
         except:
             file = open(self.log, mode="a", encoding='utf-8')
-            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetInicio\n')
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetInicio, ' + traceback.print_exc() + '\n')
     
     def tweetAtaque(self, ataque):
         try:
@@ -49,7 +50,7 @@ class Twitter:
             file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
         except:
             file = open(self.log, mode="a", encoding='utf-8')
-            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetAtaque, param: ' + ataque + '\n')
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + 'tweetAtaque, ' + traceback.print_exc() + '\n')
     
     def tweetPosiciones(self, posiciones):
         try:
@@ -59,7 +60,7 @@ class Twitter:
             file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
         except:
             file = open(self.log, mode="a", encoding='utf-8')
-            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetPosiciones, param: ' + posiciones + '\n')
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetPosiciones, ' + traceback.print_exc() + '\n')
 
     def tweetFinal(self, ganador):
         try:
@@ -71,4 +72,4 @@ class Twitter:
             file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
         except:
             file = open(self.log, mode="a", encoding='utf-8')
-            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetFinal, param: ' + ganador + '\n')
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetFinal, ' + traceback.print_exc() + '\n')
