@@ -35,10 +35,10 @@ class Twitter:
             log = self.__clientV2.create_tweet(text='Ha comenzado la guerra civil en Costa Rica y los 84 cantones se disputarán entre sí el territorio costarricense.', media_ids=[mediaId])
             file = open(self.log, mode="a", encoding='utf-8')
             file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
-        except:
+        except Exception as e:
             file = open(self.log, mode="a", encoding='utf-8')
-            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetInicio:')
-            traceback.print_exc()
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetInicio: ')
+            file.write(str(e) + '\n')
     
     def tweetAtaque(self, ataque):
         try:
@@ -49,10 +49,10 @@ class Twitter:
             log = self.__tweetUltimoAtaque = self.__clientV2.create_tweet(text=ataque, media_ids=[mediaId1, mediaId2])
             file = open(self.log, mode="a", encoding='utf-8')
             file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
-        except:
+        except Exception as e:
             file = open(self.log, mode="a", encoding='utf-8')
-            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + 'tweetAtaque:')
-            traceback.print_exc()
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' 'tweetAtaque: ')
+            file.write(str(e) + '\n')
     
     def tweetPosiciones(self, posiciones):
         try:
@@ -60,10 +60,10 @@ class Twitter:
             log = self.__clientV2.create_tweet(text=posiciones, in_reply_to_tweet_id=tweetId)
             file = open(self.log, mode="a", encoding='utf-8')
             file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
-        except:
+        except Exception as e:
             file = open(self.log, mode="a", encoding='utf-8')
-            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetPosiciones:')
-            traceback.print_exc()
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetPosiciones: ')
+            file.write(str(e) + '\n')
 
     def tweetFinal(self, ganador):
         try:
@@ -73,7 +73,7 @@ class Twitter:
             log = self.__clientV2.create_tweet(text=text, media_ids=[mediaId])
             file = open(self.log, mode="a", encoding='utf-8')
             file.write('LOG (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + str(log) + '\n')
-        except:
+        except Exception as e:
             file = open(self.log, mode="a", encoding='utf-8')
-            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetFinal:')
-            traceback.print_exc()
+            file.write('EXC (' + datetime.now().strftime("%d/%m - %H:%M:%S") + '): ' + 'tweetFinal: ')
+            file.write(str(e) + '\n')
